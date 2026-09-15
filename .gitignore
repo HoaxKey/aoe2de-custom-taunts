@@ -1,0 +1,24 @@
+# Generated build and release artifacts
+/build/**
+!/build/.gitkeep
+/releases/**
+!/releases/.gitkeep
+
+# Audio is large and/or generated. Use git add -f only when inclusion is intentional.
+/audio/source/*
+!/audio/source/README.md
+/audio/preprocessed/*
+!/audio/preprocessed/.gitkeep
+/audio/wem/*
+!/audio/wem/README.md
+
+# Wwise-generated projects, caches, and SoundBanks
+/wwise-project/
+/.cache/
+
+# Python/editor/OS noise
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
