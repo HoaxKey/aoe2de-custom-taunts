@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the primary mod manifest from the approved Arnold capture ledger."""
+"""Generate the primary manifest and README table from the Arnold ledger."""
 
 from __future__ import annotations
 
@@ -11,6 +11,40 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "manifest" / "arnold_taunts_capture.csv"
 MANIFEST = ROOT / "manifest" / "taunts.json"
+README = ROOT / "README.md"
+TABLE_START = "<!-- BEGIN GENERATED ARNOLD TAUNT TABLE -->"
+TABLE_END = "<!-- END GENERATED ARNOLD TAUNT TABLE -->"
+
+
+def markdown_cell(value: str) -> str:
+    """Escape ledger text for a compact GitHub Markdown table cell."""
+    return value.replace("|", "\\|").replace("\r", " ").replace("\n", " ").strip()
+
+
+def sync_readme_table(rows: list[dict[str, str]]) -> None:
+    text = README.read_text(encoding="utf-8")
+    if text.count(TABLE_START) != 1 or text.count(TABLE_END) != 1:
+        raise ValueError("README must contain exactly one generated taunt table marker pair")
+    lines = [
+        "| Taunt | AoE2 meaning | Arnold replacement | Film |",
+        "|---:|---|---|---|",
+    ]
+    for row in rows:
+        lines.append(
+            "| /{number} | {aoe2_taunt} | “{arnold_quote}” | {movie} |".format(
+                number=int(row["number"]),
+                aoe2_taunt=markdown_cell(row["aoe2_taunt"]),
+                arnold_quote=markdown_cell(row["arnold_quote"]),
+                movie=markdown_cell(row["movie"]),
+            )
+        )
+    table = "\n".join(lines)
+    before, remainder = text.split(TABLE_START)
+    _old_table, after = remainder.split(TABLE_END)
+    updated = before + TABLE_START + "\n\n" + table + "\n\n" + TABLE_END + after
+    if updated != text:
+        README.write_text(updated, encoding="utf-8")
+        print(f"generated: {README.relative_to(ROOT)} taunt table ({len(rows)} rows)")
 
 
 def main() -> int:
@@ -80,6 +114,11 @@ def main() -> int:
     }
     MANIFEST.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"generated: {MANIFEST.relative_to(ROOT)} ({len(taunts)} taunts)")
+    try:
+        sync_readme_table(rows)
+    except (OSError, ValueError) as exc:
+        print(f"ERROR: cannot generate README taunt table: {exc}", file=sys.stderr)
+        return 2
     return 0
 
 
