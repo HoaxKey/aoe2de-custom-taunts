@@ -1,0 +1,50 @@
+number,source_url,capture_notes
+8,https://s3.us-east-2.amazonaws.com/arnoldum/you_are_a_fucking_choir_boy_compared_to_me.mp3,Approved line is present; trim any unwanted trailing context.
+9,https://s3.us-east-2.amazonaws.com/arnoldum/what_an_ugly_mother_fucker.mp3,Exact line with minor transcript wording difference.
+10,https://s3.us-east-2.amazonaws.com/arnoldum/you_are_terminated.mp3,Exact line.
+14,https://s3.us-east-2.amazonaws.com/arnoldum/common_bennete_it_is_party.mp3,Exact line despite misspelled source slug.
+19,https://s3.us-east-2.amazonaws.com/arnoldum/I_am_back.mp3,Exact line.
+24,https://s3.us-east-2.amazonaws.com/arnoldum/jesus_marge_what_the_fuck.mp3,Exact line.
+25,https://s3.us-east-2.amazonaws.com/arnoldum/predator_common_do_it_now_kill_me.mp3,Approved words are present; trim to preferred delivery.
+29,https://s3.us-east-2.amazonaws.com/arnoldum/crom_laughs_at_your_four_winds.mp3,Exact line.
+30,https://s3.us-east-2.amazonaws.com/arnoldum/come_with_me_if_you_want_to_live.mp3,Exact line.
+31,https://s3.us-east-2.amazonaws.com/arnoldum/it_is_showtime.mp3,Exact line.
+33,https://s3.us-east-2.amazonaws.com/arnoldum/you_should_clone_yourself_why_is_that_so_you_could_go_fuck_yourself.mp3,Trim after “You should clone yourself.”
+40,https://s3.us-east-2.amazonaws.com/arnoldum/if_it_bleeds_we_can_kill_it.mp3,Exact line.
+43,https://s3.us-east-2.amazonaws.com/arnoldum/this_is_the_plan_get_your_ass_to_mars.mp3,Trim after “This is the plan.”
+45,https://s3.us-east-2.amazonaws.com/arnoldum/get_to_the_choppa.mp3,Exact line.
+57,https://s3.us-east-2.amazonaws.com/arnoldum/enough_talk.mp3,Exact line; soundboard labels film imprecisely.
+58,https://s3.us-east-2.amazonaws.com/arnoldum/need_your_cloth_your_boots_your_motocycle.mp3,Exact line.
+61,https://s3.us-east-2.amazonaws.com/arnoldum/I_will_be_back_2.mp3,Exact line.
+62,https://s3.us-east-2.amazonaws.com/arnoldum/sweethearth_we_are_married_consider_it_as_a_divorce.mp3,Trim the setup and retain “Consider that a divorce.”
+63,https://s3.us-east-2.amazonaws.com/arnoldum/commando_let_of_some_steam_bennett.mp3,Exact line.
+65,https://s3.us-east-2.amazonaws.com/arnoldum/you_are_fired.mp3,Exact line.
+66,https://s3.us-east-2.amazonaws.com/arnoldum/it_might_be_a_tumor_it_is_not_a_tumor_at_all.mp3,Trim to “It’s not a tumor!”
+67,https://s3.us-east-2.amazonaws.com/arnoldum/put_that_cookie_down.mp3,Verify that the file includes the final “Now!” before review.
+68,https://s3.us-east-2.amazonaws.com/arnoldum/here_is_subzero_now_plain_zero.mp3,Exact line.
+72,https://s3.us-east-2.amazonaws.com/arnoldum/see_you_at_the_party_richter.mp3,Exact line.
+73,https://s3.us-east-2.amazonaws.com/arnoldum/stick_around.mp3,Exact line.
+74,https://s3.us-east-2.amazonaws.com/arnoldum/excuse_me_dont_disturbe_my_friend_he_is_dead_tired.mp3,Trim the optional opening “Excuse me.”
+75,https://s3.us-east-2.amazonaws.com/arnoldum/to_be_or_not_to_be_not_to_be.mp3,Exact line.
+76,https://s3.us-east-2.amazonaws.com/arnoldum/hey_want_to_be_a_farmer_here_is_a_couple_of_acres.mp3,Approved line is present.
+77,https://s3.us-east-2.amazonaws.com/arnoldum/you_luggage.mp3,Exact Arnold delivery; source transcript omits “are.”
+78,https://s3.us-east-2.amazonaws.com/arnoldum/we_are_going_to_play_a_wonderfull_game_who_is_your_daddy_and_what_does_he_do.mp3,Trim the introductory sentence.
+81,https://s3.us-east-2.amazonaws.com/arnoldum/allow_me_to_break_the_ice.mp3,Exact line.
+82,https://s3.us-east-2.amazonaws.com/arnoldum/what_killed_the_dinosaurs_the_ice_age.mp3,Exact line.
+83,https://s3.us-east-2.amazonaws.com/arnoldum/what_happened_to_buzzsaw_he_had_to_split.mp3,Retain the setup if it improves the punchline; otherwise trim to approved words.
+85,https://s3.us-east-2.amazonaws.com/arnoldum/crom.mp3,Exact shout.
+86,https://s3.us-east-2.amazonaws.com/arnoldum/this_is_the_plan_get_your_ass_to_mars.mp3,Trim the setup and retain “Get your ass to Mars.”
+87,https://s3.us-east-2.amazonaws.com/arnoldum/total_recall_come_on_cohaagen_give_these_people_air.mp3,Trim the Cohaagen address if desired.
+88,https://s3.us-east-2.amazonaws.com/arnoldum/ou_think_this_is_the_real_Quaid_it_is.mp3,Exact line despite misspelled source slug.
+89,https://s3.us-east-2.amazonaws.com/arnoldum/no_problemo.mp3,Exact line.
+90,https://s3.us-east-2.amazonaws.com/arnoldum/I_need_a_vacation.mp3,Exact line.
+91,https://s3.us-east-2.amazonaws.com/arnoldum/chillout_dickward.mp3,Exact line despite misspelled source slug.
+92,https://s3.us-east-2.amazonaws.com/arnoldum/dilone_you_son_of_a_bitch.mp3,Exact line despite misspelled source slug.
+94,https://s3.us-east-2.amazonaws.com/arnoldum/remember_sally_when_I_promised_to_kill_you_last_you_did_I_lied.mp3,Approved exchange is present; retain or trim Sully’s reply during review.
+95,https://s3.us-east-2.amazonaws.com/arnoldum/I_eat_green_berets_for_breakfast_and_right_now_I_am_verry_hungry.mp3,Trim after the approved sentence if desired.
+96,https://s3.us-east-2.amazonaws.com/arnoldum/knock_knock.mp3,Exact line.
+97,https://s3.us-east-2.amazonaws.com/arnoldum/fuck_you_asshole_fuck_you_asshole.mp3,Commando exchange; isolate Arnold’s second delivery.
+98,https://s3.us-east-2.amazonaws.com/arnoldum/Rubber_baby_buggie_bumpers.mp3,Exact line despite misspelled source slug.
+100,https://s3.us-east-2.amazonaws.com/arnoldum/milk_is_for_babies_when_you_grow_up_you_have_to_drink_beer.mp3,Exact line.
+102,https://s3.us-east-2.amazonaws.com/arnoldum/cocainum.mp3,Exact line.
+105,https://s3.us-east-2.amazonaws.com/arnoldum/terminator_2_hasta_la_vista_baby.mp3,Exact line.

@@ -70,8 +70,8 @@ def load_project(manifest: Path, source_dir: Path) -> Project:
     if isinstance(version, str) and not SAFE_VERSION.fullmatch(version):
         errors.append("mod.version contains unsafe filename characters")
     start = metadata.get("custom_number_start")
-    if isinstance(start, bool) or not isinstance(start, int) or start < 100:
-        errors.append("mod.custom_number_start must be an integer of at least 100")
+    if isinstance(start, bool) or not isinstance(start, int) or start < 1:
+        errors.append("mod.custom_number_start must be an integer of at least 1")
         start = 300
 
     seen_numbers: set[int] = set()

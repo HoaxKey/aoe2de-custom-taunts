@@ -1,8 +1,8 @@
-# AoE2DE Custom Taunts Starter
+# AoE2DE Arnold Schwarzenegger Taunts
 
 A manifest-driven, cosmetic sound mod for **Age of Empires II: Definitive
-Edition on PC**. The sample assignments are `/300`, `/301`, and `/302`; the
-starter audio is made from original synthesized chimes, not copyrighted clips.
+Edition on PC**. It replaces all built-in `/1`–`/105` taunts with approved
+Arnold Schwarzenegger movie quotes and noises.
 
 > **Multiplayer limitation:** taunt audio is loaded locally. It is not sent to
 > other players through chat or the game simulation. Every player who should
@@ -21,11 +21,14 @@ audio/
   preprocessed/    normalized WAVs for Wwise (generated, ignored)
   wem/             genuine Wwise outputs (ignored by default)
 manifest/
-  taunts.json      human-editable taunt assignments and metadata
+  arnold_taunts_capture.csv  approved quote/source ledger
+  audio_edits.json           explicit dialogue cut points
+  taunts.json                 generated production assignments
+  starter_taunts.json         preserved /300-/302 test configuration
 mod-assets/        static files copied into every package
 scripts/
   check_dependencies.py
-  generate_placeholders.py
+  sync_arnold_manifest.py
   preprocess_audio.py
   convert_with_wwise.py
   build.py
@@ -62,7 +65,7 @@ Run these commands from the repository root. On Windows, replace `python3` with
 
 ```bash
 python3 scripts/check_dependencies.py
-python3 scripts/generate_placeholders.py
+python3 scripts/sync_arnold_manifest.py
 python3 scripts/preprocess_audio.py --check
 python3 scripts/preprocess_audio.py --force
 python3 scripts/build.py validate --manifest-only
@@ -99,31 +102,24 @@ python3 scripts/build.py build --allow-missing-wem
 
 It never passes as a normal release and must not be installed or published.
 
-## Add or replace a sound
+## Add or replace an Arnold sound
 
-1. Use audio you created or have permission to distribute. Copy it to
-   `audio/source/`.
-2. Add or edit an entry in `manifest/taunts.json`. Assign a unique integer at or
-   above `custom_number_start` (300 in this project). Keep these fields aligned:
-
-   ```json
-   {
-     "number": 303,
-     "display_name": "My signal",
-     "source_audio": "my-signal.mp3",
-     "output_filename": "Play_Taunt_303.wem",
-     "notes": "Recorded by Example Author; used with permission."
-   }
-   ```
-
-3. Run the preprocessor. It accepts any format your `ffmpeg` build can read and
-   writes mono 48 kHz, 16-bit PCM WAV. It trims excessive edge silence and uses
-   `loudnorm` at -16 LUFS/-1.5 dBTP by default. Audition the result; automatic
-   loudness processing is not a substitute for listening.
-4. Run `python3 scripts/convert_with_wwise.py`. It converts every prepared WAV
+1. Update the matching row in `manifest/arnold_taunts_capture.csv` and place its
+   MP3 in `audio/source/` using the row's zero-padded filename.
+2. Run `python3 scripts/sync_arnold_manifest.py`. The generated
+   `manifest/taunts.json` should not be edited by hand.
+3. Add or adjust an entry in `manifest/audio_edits.json` when the source needs
+   an explicit dialogue cut.
+4. Run the preprocessor. It accepts any format your `ffmpeg` build can read and
+   writes mono 48 kHz, 16-bit PCM WAV using `loudnorm` at -16 LUFS/-1.5 dBTP by
+   default. Edge trimming is deliberately disabled for film dialogue because
+   threshold-based trimming can remove quiet syllables; add
+   `--trim-edge-silence` only for sources you have checked. Audition the result;
+   automatic loudness processing is not a substitute for listening.
+5. Run `python3 scripts/convert_with_wwise.py`. It converts every prepared WAV
    for Windows and assigns the exact manifest output name, such as
    `audio/wem/Play_Taunt_303.wem`.
-5. Validate and build. The build rejects duplicates, numbers outside the custom
+6. Validate and build. The build rejects duplicates, numbers outside the chosen
    range, unsafe filenames, filename/number mismatches, missing source files,
    missing WEM files, undersized media, and files without a WEM-like RIFF/RIFX
    header.
@@ -141,10 +137,10 @@ number replaces what that command plays. Before distributing an update, bump
    C:\Users\<Windows user>\Games\Age of Empires 2 DE\<profile id>\mods\local\
    ```
 
-2. Create a folder named `custom-taunts-starter` there.
+2. Create a folder named `arnold-schwarzenegger-taunts` there.
 3. Extract the **contents** of the completed ZIP into that folder. The result
    must be
-   `...\custom-taunts-starter\resources\_common\drs\sounds\Play_Taunt_300.wem`,
+   `...\arnold-schwarzenegger-taunts\resources\_common\drs\sounds\Play_Taunt_1.wem`,
    not a doubled nested folder.
 4. Restart the game if it was open. In **Mods > Installed Mods**, enable the mod
    and move it above any sound/taunt mod that assigns the same numbers. Some
@@ -158,8 +154,8 @@ Never install by overwriting files in the Steam/Microsoft game installation.
 1. Confirm the mod is enabled in **Mods > Installed Mods**.
 2. Under **Options > Audio**, turn up the Taunts volume. Under Online Settings,
    ensure taunts are not disabled/muted.
-3. Start a lobby or match, open chat, and enter `/300`, `/301`, or `/302`.
-   Custom three-digit taunts require the leading slash.
+3. Start a lobby or match, open chat, and try representative commands such as
+   `/1`, `/14`, `/45`, and `/105`.
 4. Test every number after encoding and after major game updates. The build can
    validate file structure but cannot emulate the game's Wwise decoder.
 

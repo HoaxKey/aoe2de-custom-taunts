@@ -98,8 +98,8 @@ def main() -> int:
                 file=sys.stderr,
             )
             return 2
-        if isinstance(number, bool) or not isinstance(number, int) or number < 100:
-            print(f"ERROR: taunts[{index}].number must be an integer of at least 100", file=sys.stderr)
+        if isinstance(number, bool) or not isinstance(number, int) or number < 1:
+            print(f"ERROR: taunts[{index}].number must be an integer of at least 1", file=sys.stderr)
             return 2
         if not isinstance(source_name, str) or Path(source_name).name != source_name:
             print(f"ERROR: taunts[{index}].source_audio must be a filename", file=sys.stderr)

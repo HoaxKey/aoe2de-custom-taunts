@@ -10,14 +10,16 @@ encoder whose output you have personally verified in the current AoE2DE build).
 From the repository root:
 
 ```powershell
-py -3 scripts\generate_placeholders.py
+py -3 scripts\sync_arnold_manifest.py
 py -3 scripts\preprocess_audio.py --force
 ```
 
 The second command creates mono, 48 kHz, 16-bit PCM WAV files in
-`audio\preprocessed`, trims leading/trailing silence, and targets -16 LUFS with
-a -1.5 dB true-peak ceiling. Change `--target-lufs` if your pack needs a
-different loudness, then audition the results before Wwise conversion.
+`audio\preprocessed` and targets -16 LUFS with a -1.5 dB true-peak ceiling.
+Change `--target-lufs` if your pack needs a different loudness, then audition
+the results before Wwise conversion. Optional `--trim-edge-silence` is intended
+only for checked sources; it is disabled by default so quiet film dialogue is
+not mistaken for silence.
 
 ## Encode genuine WEM files automatically
 
@@ -33,8 +35,8 @@ this project. The helper locates the newest installed Wwise, creates the ignored
 `wwise-project/CustomTaunts/CustomTaunts.wproj` scratch project if needed, uses
 its Windows `Default Conversion Settings` (PCM), converts every prepared WAV,
 and copies each genuine output to the manifest-assigned name under `audio/wem`.
-PCM is deliberately used for these short samples: it is lossless and keeps the
-placeholder pack small enough while avoiding codec-version ambiguity.
+PCM is deliberately used for these short samples: it is lossless and avoids
+codec-version ambiguity.
 
 If Wwise is installed in a nonstandard location, set its path explicitly:
 
@@ -66,9 +68,9 @@ renames a WAV to `.wem` and never emits substitute media.
    `audio\wem` directory using the exact manifest name:
 
    ```text
-   placeholder_rally.wav   -> audio\wem\Play_Taunt_300.wem
-   placeholder_ready.wav   -> audio\wem\Play_Taunt_301.wem
-   placeholder_victory.wav -> audio\wem\Play_Taunt_302.wem
+   arnold_taunt_001.wav -> audio\wem\Play_Taunt_1.wem
+   arnold_taunt_045.wav -> audio\wem\Play_Taunt_45.wem
+   arnold_taunt_105.wav -> audio\wem\Play_Taunt_105.wem
    ```
 
 7. Repeat for every manifest entry, then run:

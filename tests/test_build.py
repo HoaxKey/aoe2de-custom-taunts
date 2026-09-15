@@ -64,6 +64,26 @@ class BuildTests(unittest.TestCase):
             with self.assertRaisesRegex(build_module.ValidationError, "between 300"):
                 self.make_project(temporary, data)
 
+    def test_vanilla_replacement_range_is_accepted(self):
+        with tempfile.TemporaryDirectory() as name:
+            temporary = Path(name)
+            data = payload()
+            data["mod"]["custom_number_start"] = 1
+            data["taunts"][0]["number"] = 1
+            data["taunts"][0]["output_filename"] = "Play_Taunt_1.wem"
+            project, _source = self.make_project(temporary, data)
+            self.assertEqual(project.taunts[0]["number"], 1)
+
+    def test_zero_number_is_rejected(self):
+        with tempfile.TemporaryDirectory() as name:
+            temporary = Path(name)
+            data = payload()
+            data["mod"]["custom_number_start"] = 1
+            data["taunts"][0]["number"] = 0
+            data["taunts"][0]["output_filename"] = "Play_Taunt_0.wem"
+            with self.assertRaisesRegex(build_module.ValidationError, "between 1"):
+                self.make_project(temporary, data)
+
     def test_output_name_must_match_number(self):
         with tempfile.TemporaryDirectory() as name:
             temporary = Path(name)

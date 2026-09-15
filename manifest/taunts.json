@@ -1,34 +1,748 @@
 {
   "schema_version": 1,
   "mod": {
-    "slug": "custom-taunts-starter",
-    "title": "Custom Taunts Starter",
-    "author": "Custom Taunts project contributors",
-    "version": "0.1.0",
-    "description": "Cosmetic, client-side custom taunts /300-/302. Every listener must install and enable the same version.",
-    "custom_number_start": 300
+    "slug": "arnold-schwarzenegger-taunts",
+    "title": "Arnold Schwarzenegger Taunts",
+    "author": "AoE2 Arnold Taunts project",
+    "version": "0.2.0",
+    "description": "Cosmetic, client-side Arnold Schwarzenegger replacements for AoE2DE taunts /1-/105. Every listener must install and enable the same version.",
+    "custom_number_start": 1
   },
   "taunts": [
     {
-      "number": 300,
-      "display_name": "Rally Chime",
-      "source_audio": "placeholder_rally.wav",
-      "output_filename": "Play_Taunt_300.wem",
-      "notes": "Original synthesized placeholder; safe to replace."
+      "number": 1,
+      "display_name": "Yes",
+      "source_audio": "arnold_taunt_001.mp3",
+      "output_filename": "Play_Taunt_1.wem",
+      "notes": "Arnold: “Affirmative.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
     },
     {
-      "number": 301,
-      "display_name": "Ready Signal",
-      "source_audio": "placeholder_ready.wav",
-      "output_filename": "Play_Taunt_301.wem",
-      "notes": "Original synthesized placeholder; safe to replace."
+      "number": 2,
+      "display_name": "No",
+      "source_audio": "arnold_taunt_002.mp3",
+      "output_filename": "Play_Taunt_2.wem",
+      "notes": "Arnold: “Negative.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
     },
     {
-      "number": 302,
-      "display_name": "Victory Spark",
-      "source_audio": "placeholder_victory.wav",
-      "output_filename": "Play_Taunt_302.wem",
-      "notes": "Original synthesized placeholder; safe to replace."
+      "number": 3,
+      "display_name": "Food Please",
+      "source_audio": "arnold_taunt_003.mp3",
+      "output_filename": "Play_Taunt_3.wem",
+      "notes": "Arnold: “All they want is food!” — The Running Man. Trim the lead-in and trailing “for God’s sake” to the approved words."
+    },
+    {
+      "number": 4,
+      "display_name": "Wood Please",
+      "source_audio": "arnold_taunt_004.mp3",
+      "output_filename": "Play_Taunt_4.wem",
+      "notes": "Arnold: “Down to the wood.” — Kindergarten Cop. Trim after the approved opening words."
+    },
+    {
+      "number": 5,
+      "display_name": "Gold Please",
+      "source_audio": "arnold_taunt_005.mp3",
+      "output_filename": "Play_Taunt_5.wem",
+      "notes": "Arnold: “Money. That’s what I need, money.” — The Running Man. Combined two adjacent soundboard snippets into the approved line."
+    },
+    {
+      "number": 6,
+      "display_name": "Stone Please",
+      "source_audio": "arnold_taunt_006.mp3",
+      "output_filename": "Play_Taunt_6.wem",
+      "notes": "Arnold: “Hand over the diamond, Garden Gal!” — Batman & Robin. Exact standalone soundboard clip."
+    },
+    {
+      "number": 7,
+      "display_name": "Ahh",
+      "source_audio": "arnold_taunt_007.mp3",
+      "output_filename": "Play_Taunt_7.wem",
+      "notes": "Arnold: “You got to help me remember.” — Total Recall. Authentic Arnold film line from a ready-made soundboard clip. Replaces the approved “Now I remember.” wording which does not occur in the finished film."
+    },
+    {
+      "number": 8,
+      "display_name": "All Hail, King of the Losers",
+      "source_audio": "arnold_taunt_008.mp3",
+      "output_filename": "Play_Taunt_8.wem",
+      "notes": "Arnold: “You’re a fucking choirboy compared to me! A choirboy!” — End of Days. Approved line is present; trim any unwanted trailing context."
+    },
+    {
+      "number": 9,
+      "display_name": "Oooh",
+      "source_audio": "arnold_taunt_009.mp3",
+      "output_filename": "Play_Taunt_9.wem",
+      "notes": "Arnold: “You’re one ugly motherfucker.” — Predator. Exact line with minor transcript wording difference."
+    },
+    {
+      "number": 10,
+      "display_name": "I’ll Beat You Back to Age of Empires",
+      "source_audio": "arnold_taunt_010.mp3",
+      "output_filename": "Play_Taunt_10.wem",
+      "notes": "Arnold: “You are terminated.” — Terminator 3: Rise of the Machines. Exact line."
+    },
+    {
+      "number": 11,
+      "display_name": "Hahahahahah",
+      "source_audio": "arnold_taunt_011.mp3",
+      "output_filename": "Play_Taunt_11.wem",
+      "notes": "Arnold: “Ha! You didn’t know I was gonna say that, did you?” — Last Action Hero. Standalone soundboard clip; retain Arnold’s laugh and approved line."
+    },
+    {
+      "number": 12,
+      "display_name": "Ack, He Rushed",
+      "source_audio": "arnold_taunt_012.mp3",
+      "output_filename": "Play_Taunt_12.wem",
+      "notes": "Arnold: “Men tried to kill me.” — Total Recall. Soundboard clip says “Some men just tried to kill me”; trim “Some” if desired."
+    },
+    {
+      "number": 13,
+      "display_name": "Sure Blame it on Your ISP",
+      "source_audio": "arnold_taunt_013.mp3",
+      "output_filename": "Play_Taunt_13.wem",
+      "notes": "Arnold: “So basically, you’re lying.” — True Lies. Trim after the approved opening phrase."
+    },
+    {
+      "number": 14,
+      "display_name": "Start the Game Already",
+      "source_audio": "arnold_taunt_014.mp3",
+      "output_filename": "Play_Taunt_14.wem",
+      "notes": "Arnold: “Come on, Bennett. Let’s party.” — Commando. Exact line despite misspelled source slug."
+    },
+    {
+      "number": 15,
+      "display_name": "Don’t Point That Thing at Me",
+      "source_audio": "arnold_taunt_015.mp3",
+      "output_filename": "Play_Taunt_15.wem",
+      "notes": "Arnold: “I’ll give you ten minutes to prove it, and then I shoot you.” — Last Action Hero. Authentic standalone Arnold line. Replaces “Don’t shoot me”/“No shoot” which is spoken by Danny rather than Arnold."
+    },
+    {
+      "number": 16,
+      "display_name": "Enemy Sighted",
+      "source_audio": "arnold_taunt_016.mp3",
+      "output_filename": "Play_Taunt_16.wem",
+      "notes": "Arnold: “Someone’s coming.” — The Running Man. Exact standalone soundboard clip."
+    },
+    {
+      "number": 17,
+      "display_name": "It is Good To be the King",
+      "source_audio": "arnold_taunt_017.mp3",
+      "output_filename": "Play_Taunt_17.wem",
+      "notes": "Arnold: “I am the hero.” — Last Action Hero. Exact standalone soundboard clip."
+    },
+    {
+      "number": 18,
+      "display_name": "Monk, I Need a Monk",
+      "source_audio": "arnold_taunt_018.mp3",
+      "output_filename": "Play_Taunt_18.wem",
+      "notes": "Arnold: “You have to have faith.” — End of Days. Actual spoken wording is “We have to have faith.”"
+    },
+    {
+      "number": 19,
+      "display_name": "Long Time, No Siege",
+      "source_audio": "arnold_taunt_019.mp3",
+      "output_filename": "Play_Taunt_19.wem",
+      "notes": "Arnold: “I’m back.” — Terminator 3: Rise of the Machines. Exact line."
+    },
+    {
+      "number": 20,
+      "display_name": "My Granny Could Scrap Better Than That",
+      "source_audio": "arnold_taunt_020.mp3",
+      "output_filename": "Play_Taunt_20.wem",
+      "notes": "Arnold: “You hit like a vegetarian.” — Escape Plan. Exact full-film soundboard clip; trim surrounding dialogue during preprocessing if required."
+    },
+    {
+      "number": 21,
+      "display_name": "Nice Town, I’ll Take It",
+      "source_audio": "arnold_taunt_021.mp3",
+      "output_filename": "Play_Taunt_21.wem",
+      "notes": "Arnold: “Could I speak to the drug dealer of the house, please?” — Last Action Hero. Exact standalone soundboard clip."
+    },
+    {
+      "number": 22,
+      "display_name": "Quit Touchin Me",
+      "source_audio": "arnold_taunt_022.mp3",
+      "output_filename": "Play_Taunt_22.wem",
+      "notes": "Arnold: “Don’t do that.” — Terminator 3: Rise of the Machines. Exact soundboard clip."
+    },
+    {
+      "number": 23,
+      "display_name": "Raiding Party",
+      "source_audio": "arnold_taunt_023.mp3",
+      "output_filename": "Play_Taunt_23.wem",
+      "notes": "Arnold: “It’s a beautiful day and we’re out killing drug dealers.” — Last Action Hero. Trim the trailing question to the approved words."
+    },
+    {
+      "number": 24,
+      "display_name": "Dadgum",
+      "source_audio": "arnold_taunt_024.mp3",
+      "output_filename": "Play_Taunt_24.wem",
+      "notes": "Arnold: “Jesus, Marge! What the fuck?” — End of Days. Exact line."
+    },
+    {
+      "number": 25,
+      "display_name": "Ehhh Smite Me",
+      "source_audio": "arnold_taunt_025.mp3",
+      "output_filename": "Play_Taunt_25.wem",
+      "notes": "Arnold: “Do it! Come on! Kill me!” — Predator. Approved words are present; trim to preferred delivery."
+    },
+    {
+      "number": 26,
+      "display_name": "The Wonder, The Wonder, The Noooooo",
+      "source_audio": "arnold_taunt_026.mp3",
+      "output_filename": "Play_Taunt_26.wem",
+      "notes": "Arnold: “This is going to be very difficult to explain.” — Terminator: Dark Fate. Ready-made quote clip; exact film wording is: This will be very hard to explain to Alicia. Approved wording was a paraphrase; use the spoken wording."
+    },
+    {
+      "number": 27,
+      "display_name": "You Played 2 Hours to Die Like This",
+      "source_audio": "arnold_taunt_027.mp3",
+      "output_filename": "Play_Taunt_27.wem",
+      "notes": "Arnold: “It is in your nature to destroy yourselves.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
+    },
+    {
+      "number": 28,
+      "display_name": "Yeah Well You Should See the Other Guy",
+      "source_audio": "arnold_taunt_028.mp3",
+      "output_filename": "Play_Taunt_28.wem",
+      "notes": "Arnold: “Yes, fine. No problems.” — Red Heat. Exact standalone clip from Realm of Darkness Red Heat soundboard."
+    },
+    {
+      "number": 29,
+      "display_name": "Rogan?",
+      "source_audio": "arnold_taunt_029.mp3",
+      "output_filename": "Play_Taunt_29.wem",
+      "notes": "Arnold: “Crom laughs at your four winds.” — Conan the Barbarian. Exact line."
+    },
+    {
+      "number": 30,
+      "display_name": "WOLOLO",
+      "source_audio": "arnold_taunt_030.mp3",
+      "output_filename": "Play_Taunt_30.wem",
+      "notes": "Arnold: “Come with me if you want to live.” — Terminator 2: Judgment Day. Exact line."
+    },
+    {
+      "number": 31,
+      "display_name": "Attack an Enemy Now",
+      "source_audio": "arnold_taunt_031.mp3",
+      "output_filename": "Play_Taunt_31.wem",
+      "notes": "Arnold: “It’s showtime!” — The Running Man. Exact line."
+    },
+    {
+      "number": 32,
+      "display_name": "Cease Creating Extra Villagers",
+      "source_audio": "arnold_taunt_032.mp3",
+      "output_filename": "Play_Taunt_32.wem",
+      "notes": "Arnold: “STOP IT!” — Kindergarten Cop. Exact standalone soundboard clip."
+    },
+    {
+      "number": 33,
+      "display_name": "Create Extra Villagers",
+      "source_audio": "arnold_taunt_033.mp3",
+      "output_filename": "Play_Taunt_33.wem",
+      "notes": "Arnold: “You should clone yourself.” — The 6th Day. Trim after “You should clone yourself.”"
+    },
+    {
+      "number": 34,
+      "display_name": "Build a Navy",
+      "source_audio": "arnold_taunt_034.mp3",
+      "output_filename": "Play_Taunt_34.wem",
+      "notes": "Arnold: “I hope Mr. Bane can swim.” — Batman & Robin. Exact standalone soundboard clip."
+    },
+    {
+      "number": 35,
+      "display_name": "Stop Building a Navy",
+      "source_audio": "arnold_taunt_035.mp3",
+      "output_filename": "Play_Taunt_35.wem",
+      "notes": "Arnold: “Abort mission. We return back to base.” — The Running Man. Exact soundboard clip."
+    },
+    {
+      "number": 36,
+      "display_name": "Wait for my Signal to Attack",
+      "source_audio": "arnold_taunt_036.mp3",
+      "output_filename": "Play_Taunt_36.wem",
+      "notes": "Arnold: “Stay here. I’ll be back.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
+    },
+    {
+      "number": 37,
+      "display_name": "Build a Wonder",
+      "source_audio": "arnold_taunt_037.mp3",
+      "output_filename": "Play_Taunt_37.wem",
+      "notes": "Arnold: “Of course, I think I’m gonna win.” — Pumping Iron. Authentic Arnold documentary line from a ready-made soundboard clip. Replaces “I want to be number one.” which is not spoken in Pumping Iron."
+    },
+    {
+      "number": 38,
+      "display_name": "Give Me Your Extra Resources",
+      "source_audio": "arnold_taunt_038.mp3",
+      "output_filename": "Play_Taunt_38.wem",
+      "notes": "Arnold: “I need your help.” — Eraser. Exact standalone soundboard clip."
+    },
+    {
+      "number": 39,
+      "display_name": "Ally Sound",
+      "source_audio": "arnold_taunt_039.mp3",
+      "output_filename": "Play_Taunt_39.wem",
+      "notes": "Arnold: “Trust me.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
+    },
+    {
+      "number": 40,
+      "display_name": "Enemy Sound",
+      "source_audio": "arnold_taunt_040.mp3",
+      "output_filename": "Play_Taunt_40.wem",
+      "notes": "Arnold: “If it bleeds, we can kill it.” — Predator. Exact line."
+    },
+    {
+      "number": 41,
+      "display_name": "Neutral Sound",
+      "source_audio": "arnold_taunt_041.mp3",
+      "output_filename": "Play_Taunt_41.wem",
+      "notes": "Arnold: “I’m not into politics. I’m into survival.” — The Running Man. Trim the first sentence; retain the approved politics/survival line."
+    },
+    {
+      "number": 42,
+      "display_name": "What Age are you in",
+      "source_audio": "arnold_taunt_042.mp3",
+      "output_filename": "Play_Taunt_42.wem",
+      "notes": "Arnold: “Old. Not obsolete.” — Terminator Genisys. Ready-made quote clip; exact spoken wording is: I'm old. Not obsolete."
+    },
+    {
+      "number": 43,
+      "display_name": "What is Your Strategy",
+      "source_audio": "arnold_taunt_043.mp3",
+      "output_filename": "Play_Taunt_43.wem",
+      "notes": "Arnold: “Now, this is the plan.” — Total Recall. Trim after “This is the plan.”"
+    },
+    {
+      "number": 44,
+      "display_name": "How Many Resources do you Have",
+      "source_audio": "arnold_taunt_044.mp3",
+      "output_filename": "Play_Taunt_44.wem",
+      "notes": "Arnold: “How much is that?” — Jingle All the Way. Actual Jingle All the Way wording is “How much?”"
+    },
+    {
+      "number": 45,
+      "display_name": "Retreat Now",
+      "source_audio": "arnold_taunt_045.mp3",
+      "output_filename": "Play_Taunt_45.wem",
+      "notes": "Arnold: “Get to the chopper!” — Predator. Exact line."
+    },
+    {
+      "number": 46,
+      "display_name": "Flare the Location of Your Army",
+      "source_audio": "arnold_taunt_046.mp3",
+      "output_filename": "Play_Taunt_46.wem",
+      "notes": "Arnold: “Where is this?” — Eraser. Exact standalone soundboard clip."
+    },
+    {
+      "number": 47,
+      "display_name": "Attack in the Direction of the Flared Location",
+      "source_audio": "arnold_taunt_047.mp3",
+      "output_filename": "Play_Taunt_47.wem",
+      "notes": "Arnold: “Follow him.” — Commando. Trim the longer soundboard sentence down to “Follow him.”"
+    },
+    {
+      "number": 48,
+      "display_name": "I’m Being Attacked, Please Help",
+      "source_audio": "arnold_taunt_048.mp3",
+      "output_filename": "Play_Taunt_48.wem",
+      "notes": "Arnold: “I’m counting on you, buddy.” — Total Recall. Exact standalone soundboard clip."
+    },
+    {
+      "number": 49,
+      "display_name": "Build a Forward Base at the Flared Location",
+      "source_audio": "arnold_taunt_049.mp3",
+      "output_filename": "Play_Taunt_49.wem",
+      "notes": "Arnold: “Pull over here.” — True Lies. Trim the trailing “This is good.”"
+    },
+    {
+      "number": 50,
+      "display_name": "Build a Fortification at the Flared Location",
+      "source_audio": "arnold_taunt_050.mp3",
+      "output_filename": "Play_Taunt_50.wem",
+      "notes": "Arnold: “I want a defensive position.” — Predator. Trim after “position” to match the approved excerpt."
+    },
+    {
+      "number": 51,
+      "display_name": "Keep Your Army Close to Mine and Fight With Me",
+      "source_audio": "arnold_taunt_051.mp3",
+      "output_filename": "Play_Taunt_51.wem",
+      "notes": "Arnold: “As long as I’m with you, I’m in no danger.” — Twins. Exact film audio says: As long as I'm with you, I won't let anyone harm you, okay? Approved wording was a paraphrase; use the spoken wording."
+    },
+    {
+      "number": 52,
+      "display_name": "Build a Market at the Flared Location",
+      "source_audio": "arnold_taunt_052.mp3",
+      "output_filename": "Play_Taunt_52.wem",
+      "notes": "Arnold: “We’re all businessmen.” — Jingle All the Way. Trim after the approved opening sentence if needed."
+    },
+    {
+      "number": 53,
+      "display_name": "Rebuild Your Base at the Flared Location",
+      "source_audio": "arnold_taunt_053.mp3",
+      "output_filename": "Play_Taunt_53.wem",
+      "notes": "Arnold: “I want my life back.” — The 6th Day. Exact full-film soundboard clip."
+    },
+    {
+      "number": 54,
+      "display_name": "Build a Wall Between the two Flared Locations",
+      "source_audio": "arnold_taunt_054.mp3",
+      "output_filename": "Play_Taunt_54.wem",
+      "notes": "Arnold: “I can’t self-terminate. You must lower me into the steel.” — Terminator 2: Judgment Day. Authentic Arnold film line from a ready-made soundboard clip. Replaces the non-film paraphrase “You go. I cannot.”"
+    },
+    {
+      "number": 55,
+      "display_name": "Build a Wall Around Your Town",
+      "source_audio": "arnold_taunt_055.mp3",
+      "output_filename": "Play_Taunt_55.wem",
+      "notes": "Arnold: “We make a stand now, or there will be nobody left to go to the chopper.” — Predator. Authentic Arnold film line from a ready-made soundboard clip. Replaces “Set up a perimeter.” which is not spoken by Arnold in Predator."
+    },
+    {
+      "number": 56,
+      "display_name": "Train Units Which Counter the Enemy’s Army",
+      "source_audio": "arnold_taunt_056.mp3",
+      "output_filename": "Play_Taunt_56.wem",
+      "notes": "Arnold: “Take two of these, and call me in the morning.” — Batman & Robin. Combined two adjacent soundboard snippets into the approved line."
+    },
+    {
+      "number": 57,
+      "display_name": "Stop Training Counter Units",
+      "source_audio": "arnold_taunt_057.mp3",
+      "output_filename": "Play_Taunt_57.wem",
+      "notes": "Arnold: “Enough talk.” — Conan the Destroyer. Exact line; soundboard labels film imprecisely."
+    },
+    {
+      "number": 58,
+      "display_name": "Prepare to Send me all Your Resources so I can Vanquish Our Foes",
+      "source_audio": "arnold_taunt_058.mp3",
+      "output_filename": "Play_Taunt_58.wem",
+      "notes": "Arnold: “I need your clothes, your boots, and your motorcycle.” — Terminator 2: Judgment Day. Exact line."
+    },
+    {
+      "number": 59,
+      "display_name": "Stop Sending me Extra Resources",
+      "source_audio": "arnold_taunt_059.mp3",
+      "output_filename": "Play_Taunt_59.wem",
+      "notes": "Arnold: “One more thing: I work alone.” — Eraser. Exact standalone soundboard clip."
+    },
+    {
+      "number": 60,
+      "display_name": "Prepare to Train a Large Army, I’ll Send You as Many Resources as I can Spare",
+      "source_audio": "arnold_taunt_060.mp3",
+      "output_filename": "Play_Taunt_60.wem",
+      "notes": "Arnold: “They need a leader. They need someone with experience.” — The Running Man. Exact soundboard clip."
+    },
+    {
+      "number": 61,
+      "display_name": "Attack Player 1",
+      "source_audio": "arnold_taunt_061.mp3",
+      "output_filename": "Play_Taunt_61.wem",
+      "notes": "Arnold: “I’ll be back.” — The Terminator. Exact line."
+    },
+    {
+      "number": 62,
+      "display_name": "Attack Player 2",
+      "source_audio": "arnold_taunt_062.mp3",
+      "output_filename": "Play_Taunt_62.wem",
+      "notes": "Arnold: “Consider that a divorce.” — Total Recall. Trim the setup and retain “Consider that a divorce.”"
+    },
+    {
+      "number": 63,
+      "display_name": "Attack Player 3",
+      "source_audio": "arnold_taunt_063.mp3",
+      "output_filename": "Play_Taunt_63.wem",
+      "notes": "Arnold: “Let off some steam, Bennett.” — Commando. Exact line."
+    },
+    {
+      "number": 64,
+      "display_name": "Attack Player 4",
+      "source_audio": "arnold_taunt_064.mp3",
+      "output_filename": "Play_Taunt_64.wem",
+      "notes": "Arnold: “Tonight, hell freezes over!” — Batman & Robin. Exact soundboard clip."
+    },
+    {
+      "number": 65,
+      "display_name": "Attack Player 5",
+      "source_audio": "arnold_taunt_065.mp3",
+      "output_filename": "Play_Taunt_65.wem",
+      "notes": "Arnold: “You’re fired.” — True Lies. Exact line."
+    },
+    {
+      "number": 66,
+      "display_name": "Attack Player 6",
+      "source_audio": "arnold_taunt_066.mp3",
+      "output_filename": "Play_Taunt_66.wem",
+      "notes": "Arnold: “It’s not a tumor!” — Kindergarten Cop. Trim to “It’s not a tumor!”"
+    },
+    {
+      "number": 67,
+      "display_name": "Attack Player 7",
+      "source_audio": "arnold_taunt_067.mp3",
+      "output_filename": "Play_Taunt_67.wem",
+      "notes": "Arnold: “Put that cookie down! Now!” — Jingle All the Way. Verify that the file includes the final “Now!” before review."
+    },
+    {
+      "number": 68,
+      "display_name": "Attack Player 8",
+      "source_audio": "arnold_taunt_068.mp3",
+      "output_filename": "Play_Taunt_68.wem",
+      "notes": "Arnold: “Here is Subzero. Now, plain zero.” — The Running Man. Exact line."
+    },
+    {
+      "number": 69,
+      "display_name": "Delete the Object on the Flared Location",
+      "source_audio": "arnold_taunt_069.mp3",
+      "output_filename": "Play_Taunt_69.wem",
+      "notes": "Arnold: “It must be destroyed.” — Terminator 2: Judgment Day. Clean standalone MP3 from Terminator Files soundboard."
+    },
+    {
+      "number": 70,
+      "display_name": "Delete Your Excess Villagers",
+      "source_audio": "arnold_taunt_070.mp3",
+      "output_filename": "Play_Taunt_70.wem",
+      "notes": "Arnold: “I let him go.” — Commando. Exact standalone soundboard clip."
+    },
+    {
+      "number": 71,
+      "display_name": "Delete Excess Warships",
+      "source_audio": "arnold_taunt_071.mp3",
+      "output_filename": "Play_Taunt_71.wem",
+      "notes": "Arnold: “He won’t be needing it.” — Commando. Exact standalone soundboard clip."
+    },
+    {
+      "number": 72,
+      "display_name": "Focus on Training Infantry Units",
+      "source_audio": "arnold_taunt_072.mp3",
+      "output_filename": "Play_Taunt_72.wem",
+      "notes": "Arnold: “See you at the party, Richter!” — Total Recall. Exact line."
+    },
+    {
+      "number": 73,
+      "display_name": "Focus on Training Cavalry Units",
+      "source_audio": "arnold_taunt_073.mp3",
+      "output_filename": "Play_Taunt_73.wem",
+      "notes": "Arnold: “Stick around.” — Predator. Exact line."
+    },
+    {
+      "number": 74,
+      "display_name": "Focus on Training Ranged Units",
+      "source_audio": "arnold_taunt_074.mp3",
+      "output_filename": "Play_Taunt_74.wem",
+      "notes": "Arnold: “Don’t disturb my friend. He’s dead tired.” — Commando. Trim the optional opening “Excuse me.”"
+    },
+    {
+      "number": 75,
+      "display_name": "Focus on Training Warships",
+      "source_audio": "arnold_taunt_075.mp3",
+      "output_filename": "Play_Taunt_75.wem",
+      "notes": "Arnold: “To be or not to be? Not to be.” — Last Action Hero. Exact line."
+    },
+    {
+      "number": 76,
+      "display_name": "Attack the Enemy With Militia",
+      "source_audio": "arnold_taunt_076.mp3",
+      "output_filename": "Play_Taunt_76.wem",
+      "notes": "Arnold: “You want to be a farmer? Here’s a couple of acres.” — Last Action Hero. Approved line is present."
+    },
+    {
+      "number": 77,
+      "display_name": "Attack the Enemy With Archers",
+      "source_audio": "arnold_taunt_077.mp3",
+      "output_filename": "Play_Taunt_77.wem",
+      "notes": "Arnold: “You’re luggage.” — Eraser. Exact Arnold delivery; source transcript omits “are.”"
+    },
+    {
+      "number": 78,
+      "display_name": "Attack the Enemy With Skirmishers",
+      "source_audio": "arnold_taunt_078.mp3",
+      "output_filename": "Play_Taunt_78.wem",
+      "notes": "Arnold: “Who is your daddy, and what does he do?” — Kindergarten Cop. Trim the introductory sentence."
+    },
+    {
+      "number": 79,
+      "display_name": "Attack the Enemy With a mix of Archers and Skirmishers",
+      "source_audio": "arnold_taunt_079.mp3",
+      "output_filename": "Play_Taunt_79.wem",
+      "notes": "Arnold: “Stop whining!” — Kindergarten Cop. Exact standalone soundboard clip."
+    },
+    {
+      "number": 80,
+      "display_name": "Attack the Enemy With Scout Cavalry",
+      "source_audio": "arnold_taunt_080.mp3",
+      "output_filename": "Play_Taunt_80.wem",
+      "notes": "Arnold: “Everybody, chill!” — Batman & Robin. Clean standalone clip; exact spoken wording is: All right, everyone! Chill."
+    },
+    {
+      "number": 81,
+      "display_name": "Attack the Enemy With Men-At-Arms",
+      "source_audio": "arnold_taunt_081.mp3",
+      "output_filename": "Play_Taunt_81.wem",
+      "notes": "Arnold: “Allow me to break the ice.” — Batman & Robin. Exact line."
+    },
+    {
+      "number": 82,
+      "display_name": "Attack the Enemy With Eagle Scouts",
+      "source_audio": "arnold_taunt_082.mp3",
+      "output_filename": "Play_Taunt_82.wem",
+      "notes": "Arnold: “What killed the dinosaurs? The Ice Age!” — Batman & Robin. Exact line."
+    },
+    {
+      "number": 83,
+      "display_name": "Attack the Enemy With Towers",
+      "source_audio": "arnold_taunt_083.mp3",
+      "output_filename": "Play_Taunt_83.wem",
+      "notes": "Arnold: “He had to split.” — The Running Man. Retain the setup if it improves the punchline; otherwise trim to approved words."
+    },
+    {
+      "number": 84,
+      "display_name": "Attack the Enemy With Crossbowmen",
+      "source_audio": "arnold_taunt_084.mp3",
+      "output_filename": "Play_Taunt_84.wem",
+      "notes": "Arnold: “What a hothead.” — The Running Man. Exact standalone soundboard clip."
+    },
+    {
+      "number": 85,
+      "display_name": "Attack the Enemy With Cavalry Archers",
+      "source_audio": "arnold_taunt_085.mp3",
+      "output_filename": "Play_Taunt_85.wem",
+      "notes": "Arnold: “Crom!” — Conan the Barbarian. Exact shout."
+    },
+    {
+      "number": 86,
+      "display_name": "Attack the Enemy With Unique Units",
+      "source_audio": "arnold_taunt_086.mp3",
+      "output_filename": "Play_Taunt_86.wem",
+      "notes": "Arnold: “Get your ass to Mars.” — Total Recall. Trim the setup and retain “Get your ass to Mars.”"
+    },
+    {
+      "number": 87,
+      "display_name": "Attack the Enemy With Knights",
+      "source_audio": "arnold_taunt_087.mp3",
+      "output_filename": "Play_Taunt_87.wem",
+      "notes": "Arnold: “Give these people air!” — Total Recall. Trim the Cohaagen address if desired."
+    },
+    {
+      "number": 88,
+      "display_name": "Attack the Enemy With Battle Elephants",
+      "source_audio": "arnold_taunt_088.mp3",
+      "output_filename": "Play_Taunt_88.wem",
+      "notes": "Arnold: “You think this is the real Quaid? It is!” — Total Recall. Exact line despite misspelled source slug."
+    },
+    {
+      "number": 89,
+      "display_name": "Attack the Enemy With Scorpions",
+      "source_audio": "arnold_taunt_089.mp3",
+      "output_filename": "Play_Taunt_89.wem",
+      "notes": "Arnold: “No problemo.” — Terminator 2: Judgment Day. Exact line."
+    },
+    {
+      "number": 90,
+      "display_name": "Attack the Enemy With Monks",
+      "source_audio": "arnold_taunt_090.mp3",
+      "output_filename": "Play_Taunt_90.wem",
+      "notes": "Arnold: “I need a vacation.” — Terminator 2: Judgment Day. Exact line."
+    },
+    {
+      "number": 91,
+      "display_name": "Attack the Enemy With Monks and Mangonels",
+      "source_audio": "arnold_taunt_091.mp3",
+      "output_filename": "Play_Taunt_91.wem",
+      "notes": "Arnold: “Chill out, dickwad.” — Terminator 2: Judgment Day. Exact line despite misspelled source slug."
+    },
+    {
+      "number": 92,
+      "display_name": "Attack the Enemy With Eagle Warriors",
+      "source_audio": "arnold_taunt_092.mp3",
+      "output_filename": "Play_Taunt_92.wem",
+      "notes": "Arnold: “Dillon! You son of a bitch!” — Predator. Exact line despite misspelled source slug."
+    },
+    {
+      "number": 93,
+      "display_name": "Attack the Enemy With Halberdiers and Rams",
+      "source_audio": "arnold_taunt_093.mp3",
+      "output_filename": "Play_Taunt_93.wem",
+      "notes": "Arnold: “CIA got you pushing too many pencils?” — Predator. Exact soundboard clip."
+    },
+    {
+      "number": 94,
+      "display_name": "Attack the Enemy With Elite Eagle Warriors",
+      "source_audio": "arnold_taunt_094.mp3",
+      "output_filename": "Play_Taunt_94.wem",
+      "notes": "Arnold: “Remember when I promised to kill you last? I lied.” — Commando. Approved exchange is present; retain or trim Sully’s reply during review."
+    },
+    {
+      "number": 95,
+      "display_name": "Attack the Enemy With Arbalests",
+      "source_audio": "arnold_taunt_095.mp3",
+      "output_filename": "Play_Taunt_95.wem",
+      "notes": "Arnold: “I eat Green Berets for breakfast.” — Commando. Trim after the approved sentence if desired."
+    },
+    {
+      "number": 96,
+      "display_name": "Attack the Enemy With Champions",
+      "source_audio": "arnold_taunt_096.mp3",
+      "output_filename": "Play_Taunt_96.wem",
+      "notes": "Arnold: “Knock, knock.” — Commando. Exact line."
+    },
+    {
+      "number": 97,
+      "display_name": "Attack the Enemy With Galleys",
+      "source_audio": "arnold_taunt_097.mp3",
+      "output_filename": "Play_Taunt_97.wem",
+      "notes": "Arnold: “Fuck you, asshole.” — Commando. Commando exchange; isolate Arnold’s second delivery."
+    },
+    {
+      "number": 98,
+      "display_name": "Attack the Enemy With Fire Galleys",
+      "source_audio": "arnold_taunt_098.mp3",
+      "output_filename": "Play_Taunt_98.wem",
+      "notes": "Arnold: “Rubber baby buggy bumpers!” — Last Action Hero. Exact line despite misspelled source slug."
+    },
+    {
+      "number": 99,
+      "display_name": "Attack the Enemy With Demolition Rafts",
+      "source_audio": "arnold_taunt_099.mp3",
+      "output_filename": "Play_Taunt_99.wem",
+      "notes": "Arnold: “AAAAAAARGH!” — Total Recall. Martian decompression scream from soundboard."
+    },
+    {
+      "number": 100,
+      "display_name": "Attack the Enemy With War Galleys",
+      "source_audio": "arnold_taunt_100.mp3",
+      "output_filename": "Play_Taunt_100.wem",
+      "notes": "Arnold: “Milk is for babies. When you grow up, you drink beer.” — Pumping Iron. Exact line."
+    },
+    {
+      "number": 101,
+      "display_name": "Attack the Enemy With Fire Ships",
+      "source_audio": "arnold_taunt_101.mp3",
+      "output_filename": "Play_Taunt_101.wem",
+      "notes": "Arnold: “Money talks and bullshit walks.” — Twins. Exact standalone soundboard clip."
+    },
+    {
+      "number": 102,
+      "display_name": "Attack the Enemy With Unique Warships",
+      "source_audio": "arnold_taunt_102.mp3",
+      "output_filename": "Play_Taunt_102.wem",
+      "notes": "Arnold: “Cocainum!” — Red Heat. Exact line."
+    },
+    {
+      "number": 103,
+      "display_name": "Use an Onager to cut Down Trees at the Flared Location",
+      "source_audio": "arnold_taunt_103.mp3",
+      "output_filename": "Play_Taunt_103.wem",
+      "notes": "Arnold: “AAAAAAARGH!” — Predator. Full-volume jungle battle roar; select the strongest short section during normalization."
+    },
+    {
+      "number": 104,
+      "display_name": "Don’t Resign",
+      "source_audio": "arnold_taunt_104.mp3",
+      "output_filename": "Play_Taunt_104.wem",
+      "notes": "Arnold: “You just gotta keep coming back stronger.” — Pumping Iron. Exact standalone soundboard clip."
+    },
+    {
+      "number": 105,
+      "display_name": "You can Resign Now",
+      "source_audio": "arnold_taunt_105.mp3",
+      "output_filename": "Play_Taunt_105.wem",
+      "notes": "Arnold: “Hasta la vista, baby.” — Terminator 2: Judgment Day. Exact line."
     }
   ]
 }
