@@ -102,7 +102,7 @@ def load_project(manifest: Path, source_dir: Path) -> Project:
         if isinstance(source_name, str) and Path(source_name).name == source_name:
             if not (source_dir / source_name).is_file():
                 errors.append(f"missing source audio: audio/source/{source_name}")
-        expected = f"Play_Taunt_{number}.wem" if isinstance(number, int) else None
+        expected = f"Play_Taunt_{number:02d}.wem" if isinstance(number, int) else None
         output = item.get("output_filename")
         if expected and output != expected:
             errors.append(f"{label}.output_filename must be exactly {expected}")

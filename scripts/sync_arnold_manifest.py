@@ -36,7 +36,7 @@ def main() -> int:
         if row.get("status") not in {"captured", "reviewed", "encoded", "tested_in_game"}:
             errors.append(f"row {row_number}: audio is not captured")
         expected_mp3 = f"arnold_taunt_{number:03d}.mp3"
-        expected_wem = f"Play_Taunt_{number}.wem"
+        expected_wem = f"Play_Taunt_{number:02d}.wem"
         if row["mp3_filename"] != expected_mp3:
             errors.append(f"row {row_number}: mp3_filename must be {expected_mp3}")
         if row["wem_filename"] != expected_wem:
@@ -69,7 +69,7 @@ def main() -> int:
             "slug": "arnold-schwarzenegger-taunts",
             "title": "Arnold Schwarzenegger Taunts",
             "author": "AoE2 Arnold Taunts project",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "description": (
                 "Cosmetic, client-side Arnold Schwarzenegger replacements for AoE2DE taunts /1-/105. "
                 "Every listener must install and enable the same version."

@@ -4,7 +4,7 @@
     "slug": "arnold-schwarzenegger-taunts",
     "title": "Arnold Schwarzenegger Taunts",
     "author": "AoE2 Arnold Taunts project",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Cosmetic, client-side Arnold Schwarzenegger replacements for AoE2DE taunts /1-/105. Every listener must install and enable the same version.",
     "custom_number_start": 1
   },
@@ -13,63 +13,63 @@
       "number": 1,
       "display_name": "Yes",
       "source_audio": "arnold_taunt_001.mp3",
-      "output_filename": "Play_Taunt_1.wem",
+      "output_filename": "Play_Taunt_01.wem",
       "notes": "Arnold: “Affirmative.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
     },
     {
       "number": 2,
       "display_name": "No",
       "source_audio": "arnold_taunt_002.mp3",
-      "output_filename": "Play_Taunt_2.wem",
+      "output_filename": "Play_Taunt_02.wem",
       "notes": "Arnold: “Negative.” — Terminator 2: Judgment Day. Exact standalone soundboard clip."
     },
     {
       "number": 3,
       "display_name": "Food Please",
       "source_audio": "arnold_taunt_003.mp3",
-      "output_filename": "Play_Taunt_3.wem",
+      "output_filename": "Play_Taunt_03.wem",
       "notes": "Arnold: “All they want is food!” — The Running Man. Trim the lead-in and trailing “for God’s sake” to the approved words."
     },
     {
       "number": 4,
       "display_name": "Wood Please",
       "source_audio": "arnold_taunt_004.mp3",
-      "output_filename": "Play_Taunt_4.wem",
+      "output_filename": "Play_Taunt_04.wem",
       "notes": "Arnold: “Down to the wood.” — Kindergarten Cop. Trim after the approved opening words."
     },
     {
       "number": 5,
       "display_name": "Gold Please",
       "source_audio": "arnold_taunt_005.mp3",
-      "output_filename": "Play_Taunt_5.wem",
+      "output_filename": "Play_Taunt_05.wem",
       "notes": "Arnold: “Money. That’s what I need, money.” — The Running Man. Combined two adjacent soundboard snippets into the approved line."
     },
     {
       "number": 6,
       "display_name": "Stone Please",
       "source_audio": "arnold_taunt_006.mp3",
-      "output_filename": "Play_Taunt_6.wem",
+      "output_filename": "Play_Taunt_06.wem",
       "notes": "Arnold: “Hand over the diamond, Garden Gal!” — Batman & Robin. Exact standalone soundboard clip."
     },
     {
       "number": 7,
       "display_name": "Ahh",
       "source_audio": "arnold_taunt_007.mp3",
-      "output_filename": "Play_Taunt_7.wem",
+      "output_filename": "Play_Taunt_07.wem",
       "notes": "Arnold: “You got to help me remember.” — Total Recall. Authentic Arnold film line from a ready-made soundboard clip. Replaces the approved “Now I remember.” wording which does not occur in the finished film."
     },
     {
       "number": 8,
       "display_name": "All Hail, King of the Losers",
       "source_audio": "arnold_taunt_008.mp3",
-      "output_filename": "Play_Taunt_8.wem",
+      "output_filename": "Play_Taunt_08.wem",
       "notes": "Arnold: “You’re a fucking choirboy compared to me! A choirboy!” — End of Days. Approved line is present; trim any unwanted trailing context."
     },
     {
       "number": 9,
       "display_name": "Oooh",
       "source_audio": "arnold_taunt_009.mp3",
-      "output_filename": "Play_Taunt_9.wem",
+      "output_filename": "Play_Taunt_09.wem",
       "notes": "Arnold: “You’re one ugly motherfucker.” — Predator. Exact line with minor transcript wording difference."
     },
     {

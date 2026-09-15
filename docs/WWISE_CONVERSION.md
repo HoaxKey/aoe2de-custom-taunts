@@ -68,7 +68,7 @@ renames a WAV to `.wem` and never emits substitute media.
    `audio\wem` directory using the exact manifest name:
 
    ```text
-   arnold_taunt_001.wav -> audio\wem\Play_Taunt_1.wem
+   arnold_taunt_001.wav -> audio\wem\Play_Taunt_01.wem
    arnold_taunt_045.wav -> audio\wem\Play_Taunt_45.wem
    arnold_taunt_105.wav -> audio\wem\Play_Taunt_105.wem
    ```

@@ -70,7 +70,7 @@ class BuildTests(unittest.TestCase):
             data = payload()
             data["mod"]["custom_number_start"] = 1
             data["taunts"][0]["number"] = 1
-            data["taunts"][0]["output_filename"] = "Play_Taunt_1.wem"
+            data["taunts"][0]["output_filename"] = "Play_Taunt_01.wem"
             project, _source = self.make_project(temporary, data)
             self.assertEqual(project.taunts[0]["number"], 1)
 
@@ -80,7 +80,7 @@ class BuildTests(unittest.TestCase):
             data = payload()
             data["mod"]["custom_number_start"] = 1
             data["taunts"][0]["number"] = 0
-            data["taunts"][0]["output_filename"] = "Play_Taunt_0.wem"
+            data["taunts"][0]["output_filename"] = "Play_Taunt_00.wem"
             with self.assertRaisesRegex(build_module.ValidationError, "between 1"):
                 self.make_project(temporary, data)
 

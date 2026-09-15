@@ -140,7 +140,7 @@ number replaces what that command plays. Before distributing an update, bump
 2. Create a folder named `arnold-schwarzenegger-taunts` there.
 3. Extract the **contents** of the completed ZIP into that folder. The result
    must be
-   `...\arnold-schwarzenegger-taunts\resources\_common\drs\sounds\Play_Taunt_1.wem`,
+   `...\arnold-schwarzenegger-taunts\resources\_common\drs\sounds\Play_Taunt_01.wem`,
    not a doubled nested folder.
 4. Restart the game if it was open. In **Mods > Installed Mods**, enable the mod
    and move it above any sound/taunt mod that assigns the same numbers. Some

@@ -104,7 +104,7 @@ def main() -> int:
         if not isinstance(source_name, str) or Path(source_name).name != source_name:
             print(f"ERROR: taunts[{index}].source_audio must be a filename", file=sys.stderr)
             return 2
-        expected_output = f"Play_Taunt_{number}.wem"
+        expected_output = f"Play_Taunt_{number:02d}.wem"
         if not isinstance(output_name, str) or Path(output_name).name != output_name:
             print(f"ERROR: taunts[{index}].output_filename must be a filename", file=sys.stderr)
             return 2
