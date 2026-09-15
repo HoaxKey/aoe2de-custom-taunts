@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "mod": {
+    "slug": "custom-taunts-starter",
+    "title": "Custom Taunts Starter",
+    "author": "Custom Taunts project contributors",
+    "version": "0.1.0",
+    "description": "Cosmetic, client-side custom taunts /300-/302. Every listener must install and enable the same version.",
+    "custom_number_start": 300
+  },
+  "taunts": [
+    {
+      "number": 300,
+      "display_name": "Rally Chime",
+      "source_audio": "placeholder_rally.wav",
+      "output_filename": "Play_Taunt_300.wem",
+      "notes": "Original synthesized placeholder; safe to replace."
+    },
+    {
+      "number": 301,
+      "display_name": "Ready Signal",
+      "source_audio": "placeholder_ready.wav",
+      "output_filename": "Play_Taunt_301.wem",
+      "notes": "Original synthesized placeholder; safe to replace."
+    },
+    {
+      "number": 302,
+      "display_name": "Victory Spark",
+      "source_audio": "placeholder_victory.wav",
+      "output_filename": "Play_Taunt_302.wem",
+      "notes": "Original synthesized placeholder; safe to replace."
+    }
+  ]
+}
